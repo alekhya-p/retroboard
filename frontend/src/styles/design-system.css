@@ -1,0 +1,143 @@
+/* =====================================================================
+   Design system foundations
+   Shared tokens, button system and surface/card primitives used across
+   the whole app so pages stop reinventing their own spacing & buttons.
+   Imported once from main.ts.
+   ===================================================================== */
+
+:root {
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Content widths (single source of truth for page max-width) */
+  --page-max-app: 1200px;
+  --page-max-marketing: 1240px;
+  --page-max-narrow: 760px;
+  --page-max-wide: 1500px;
+
+  /* Responsive page gutter - smooth from phone to desktop */
+  --page-gutter: clamp(14px, 4vw, 32px);
+
+  /* iOS / Android safe areas */
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+
+  --ds-radius: 12px;
+  --ds-radius-lg: 18px;
+}
+
+/* =========================== Button system =========================== */
+.btn {
+  --btn-bg: #2563eb;
+  --btn-fg: #ffffff;
+  --btn-border: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.15;
+  border-radius: 10px;
+  padding: 10px 18px;
+  min-height: 44px;
+  border: 1.5px solid var(--btn-border);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+  transition: filter 0.15s ease, transform 0.15s ease, background 0.15s ease,
+    box-shadow 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+}
+.btn:hover:not(:disabled):not([aria-disabled='true']) {
+  filter: brightness(1.04);
+  transform: translateY(-1px);
+}
+.btn:active:not(:disabled) { transform: translateY(0); }
+.btn:disabled,
+.btn[aria-disabled='true'] { opacity: 0.55; cursor: not-allowed; }
+.btn:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }
+
+/* Variants */
+.btn--primary {
+  --btn-bg: #2563eb;
+  --btn-fg: #fff;
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.18);
+}
+.btn--secondary {
+  --btn-bg: linear-gradient(135deg, #6366f1, #8b5cf6);
+  --btn-fg: #fff;
+}
+.btn--outline {
+  --btn-bg: #fff;
+  --btn-fg: #2563eb;
+  --btn-border: #2563eb;
+}
+.btn--ghost {
+  --btn-bg: rgba(99, 102, 241, 0.08);
+  --btn-fg: #4f46e5;
+}
+.btn--subtle {
+  --btn-bg: #f1f5f9;
+  --btn-fg: #1e293b;
+}
+.btn--danger {
+  --btn-bg: #e11d48;
+  --btn-fg: #fff;
+}
+
+/* Sizes */
+.btn--sm { padding: 7px 12px; min-height: 36px; font-size: 0.85rem; border-radius: 8px; }
+.btn--lg { padding: 13px 24px; min-height: 52px; font-size: 1.05rem; border-radius: 12px; }
+.btn--block { width: 100%; }
+.btn--icon { padding: 10px; min-width: 44px; }
+
+.btn__spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  animation: ds-btn-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes ds-btn-spin { to { transform: rotate(360deg); } }
+
+/* =========================== Surfaces =========================== */
+/* A standard card. ONE internal padding (responsive) so content inside
+   should never add its own horizontal padding on top. */
+.surface {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: var(--ds-radius-lg);
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.05);
+  padding: clamp(16px, 4vw, 28px);
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+  .btn:hover:not(:disabled) { transform: none; }
+}
+
+/* =========================== iOS zoom guard =========================== */
+/* Mobile Safari auto-zooms the page when a focused text field has a
+   font-size below 16px. Force >= 16px for text-entry controls on small
+   screens so focusing an input never triggers that jarring zoom - while
+   keeping pinch-zoom enabled in the viewport meta for accessibility. */
+@media (max-width: 640px) {
+  input:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='color']):not([type='file']):not([type='submit']):not([type='button']),
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}

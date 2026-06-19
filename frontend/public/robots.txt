@@ -1,0 +1,106 @@
+# https://reaitro.com - robots.txt
+# Updated: 2026-05-18
+# No wildcards. Uses prefix matching + longest-match Allow precedence.
+
+User-agent: *
+
+# --- Disallow: auth-required, dynamic, API surfaces ---
+Disallow: /boards
+Disallow: /join-board
+Disallow: /play/
+Disallow: /api/
+
+# --- Re-allow public sub-paths that share the /boards prefix ---
+# (Longest-match wins - these override the broader Disallow above.)
+Allow: /boards/templates
+Allow: /templates/
+
+# --- Explicit public routes (informational; default is Allow) ---
+Allow: /
+Allow: /login
+Allow: /about
+Allow: /help
+Allow: /privacy
+Allow: /terms
+Allow: /play
+Allow: /ai-generator
+Allow: /ai-retrospective
+Allow: /free-retrospective-tool
+Allow: /sprint-retrospective
+Allow: /scrum-retrospective
+Allow: /retrospective-ideas
+Allow: /retrospective-games
+Allow: /remote-retrospective
+Allow: /easyretro-alternative
+Allow: /parabol-alternative
+Allow: /retrium-alternative
+Allow: /retro-icebreaker-questions
+Allow: /blog
+Allow: /blog/
+
+# Be polite
+Crawl-delay: 1
+
+
+# --- Googlebot (ignores Crawl-delay anyway) ---
+User-agent: Googlebot
+Disallow: /boards
+Disallow: /join-board
+Disallow: /play/
+Disallow: /api/
+Allow: /boards/templates
+Allow: /templates/
+Allow: /
+
+
+# --- Googlebot Image ---
+User-agent: Googlebot-Image
+Allow: /
+
+
+# --- Bingbot ---
+User-agent: Bingbot
+Disallow: /boards
+Disallow: /join-board
+Disallow: /play/
+Disallow: /api/
+Allow: /boards/templates
+Allow: /templates/
+Allow: /
+
+
+# --- AI crawlers ---
+User-agent: GPTBot
+Disallow: /boards
+Disallow: /join-board
+Disallow: /play/
+Disallow: /api/
+Allow: /boards/templates
+Allow: /templates/
+Allow: /
+
+User-agent: Google-Extended
+Disallow: /boards
+Disallow: /join-board
+Disallow: /play/
+Disallow: /api/
+Allow: /boards/templates
+Allow: /templates/
+Allow: /
+
+User-agent: PerplexityBot
+Disallow: /boards
+Disallow: /join-board
+Disallow: /play/
+Disallow: /api/
+Allow: /boards/templates
+Allow: /templates/
+Allow: /
+
+
+# --- Block low-quality AI scrapers entirely ---
+User-agent: CCBot
+Disallow: /
+
+
+Sitemap: https://reaitro.com/sitemap.xml

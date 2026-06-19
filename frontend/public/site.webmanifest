@@ -1,0 +1,13 @@
+{
+  "name": "reAItro - AI retrospectives & team games",
+  "short_name": "reAItro",
+  "description": "Free AI retrospective tool with real-time boards, AI summaries and team games for remote & distributed agile teams.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eef4ff",
+  "theme_color": "#6366f1",
+  "icons": [
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" }
+  ]
+}

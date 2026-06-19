@@ -1,0 +1,29 @@
+{
+  "microsoft": {
+    "enabled": false,
+    "tenantId": "YOUR_MICROSOFT_TENANT_ID",
+    "clientId": "YOUR_MICROSOFT_CLIENT_ID",
+    "redirectUri": "/login",
+    "responseType": "code",
+    "responseMode": "query",
+    "scope": "User.Read"
+  },
+  "google":{
+    "enabled": true,
+    "clientId":"YOUR_GOOGLE_OAUTH_CLIENT_ID.apps.googleusercontent.com",
+    "redirectUri": "/login?provider=google",
+    "scope": "email profile openid"
+  },
+  "colors": {
+    "swatches": [
+      "#4CAF50",
+      "#2196F3",
+      "#FFC107",
+      "#F44336",
+      "#9C27B0",
+      "#FF9800",
+      "#00BCD4",
+      "#795548"
+    ]
+  }
+} 

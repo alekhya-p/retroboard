@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ===== Home & top-level pages ===== -->
+  <url>
+    <loc>https://reaitro.com/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://reaitro.com/login</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reaitro.com/about</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reaitro.com/help</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reaitro.com/privacy</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://reaitro.com/terms</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- ===== Core product surfaces (public) ===== -->
+  <url>
+    <loc>https://reaitro.com/boards/templates</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://reaitro.com/ai-generator</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ===== Auth-required surfaces intentionally excluded ===== -->
+  <!--   /boards          (dashboard, requiresAuth)              -->
+  <!--   /boards/create   (requiresAuth)                         -->
+  <!--   /boards/:id      (dynamic, requiresAuth)                -->
+  <!--   /boards/:id/edit (dynamic, requiresAuth)                -->
+  <!--   /join-board      (requiresAuth)                         -->
+  <!--   /play/:id        (dynamic game-room IDs)                -->
+  <!--   /api/...         (backend endpoints)                    -->
+
+  <!-- ===== Team games (new) ===== -->
+  <url>
+    <loc>https://reaitro.com/play</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ===== SEO landing pages ===== -->
+  <url>
+    <loc>https://reaitro.com/ai-retrospective</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://reaitro.com/free-retrospective-tool</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://reaitro.com/sprint-retrospective</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://reaitro.com/scrum-retrospective</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://reaitro.com/retrospective-ideas</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ===== Retrospective template detail pages ===== -->
+  <url><loc>https://reaitro.com/templates/daki-framework</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/energy-levels</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/mountain-climber</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/glad-sad-mad</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/start-stop-continue</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/4ls-framework</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/hot-air-balloon</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/sailboat</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/three-little-pigs</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/speed-car</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/movie-night</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/space-mission</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/gym-session</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/video-game</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/kitchen-nightmares</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/wizard-school</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/katappas-blade-retro</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/danger-zone-retro</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/marauders-map-retro</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://reaitro.com/templates/titanic-retro</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- ===== Blog index ===== -->
+  <url>
+    <loc>https://reaitro.com/blog</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ===== Retrospective blog posts ===== -->
+  <url><loc>https://reaitro.com/blog/how-to-run-an-agile-retrospective</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://reaitro.com/blog/how-ai-improves-retrospectives</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://reaitro.com/blog/sprint-retrospective-ideas</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://reaitro.com/blog/retrospective-questions-to-ask</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://reaitro.com/blog/fun-retrospective-ideas</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://reaitro.com/blog/how-to-choose-a-retrospective-template</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://reaitro.com/blog/scrum-retrospective-guide</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://reaitro.com/blog/retrospective-action-items-that-stick</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://reaitro.com/blog/remote-and-async-retrospectives</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://reaitro.com/blog/online-retrospective-tool</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://reaitro.com/blog/best-retrospective-tools</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- ===== Team games blog posts (new) ===== -->
+  <url><loc>https://reaitro.com/blog/team-games-for-remote-teams</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://reaitro.com/blog/meeting-roulette-for-new-hire-onboarding</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://reaitro.com/blog/online-pictionary-for-remote-teams</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://reaitro.com/blog/virtual-trivia-for-team-meetings</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://reaitro.com/blog/two-truths-and-a-lie-examples</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://reaitro.com/blog/emoji-story-games-for-teams</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://reaitro.com/blog/donut-alternatives-for-slack</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://reaitro.com/blog/virtual-icebreakers-for-hybrid-teams</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+</urlset>

@@ -1,0 +1,137 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* On phones the 2rem side padding wastes a lot of horizontal space and makes
+   cards/forms feel cramped. Use the full width with a small, comfortable gutter. */
+@media (max-width: 600px) {
+  #app {
+    padding: 0.75rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Printable Report Styles */
+@media print {
+  /* Hide unnecessary UI elements */
+  .app-header, .cookies-banner, button, .v-btn, .sidebar, .footer {
+    display: none !important;
+  }
+
+  /* Optimize layout for paper */
+  body, #app, .app-container, .main-content {
+    background-color: white !important;
+    color: black !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Force grid/flex columns to stack or align nicely for print */
+  .board-columns-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+  }
+
+  .board-column {
+    flex: 1 1 45% !important;
+    break-inside: avoid !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+
+  /* Clean up message cards */
+  .message-card {
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    break-inside: avoid !important;
+    background: white !important;
+    color: black !important;
+    page-break-inside: avoid;
+  }
+
+  /* Print AI Summary clearly */
+  .ai-summary-container {
+    break-before: page;
+    border: 2px solid #2563eb !important;
+    padding: 20px !important;
+  }
+}

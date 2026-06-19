@@ -1,0 +1,46 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:ignore-ts": "vite --force",
+    "build": "vue-tsc -b && vite build && node scripts/build-seo.mjs",
+    "build:ignore-ts": "vite build && node scripts/build-seo.mjs",
+    "build:seo": "node scripts/build-seo.mjs",
+    "preview": "vite preview",
+    "mock": "vite --config vite.mock.config.ts"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
+    "@microsoft/microsoft-graph-types": "^2.40.0",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/gapi": "^0.0.47",
+    "@types/gapi.auth2": "^0.0.61",
+    "@types/uuid": "^10.0.0",
+    "axios": "^1.6.7",
+    "canvas-confetti": "^1.9.4",
+    "date-fns": "^3.3.1",
+    "lodash": "^4.17.21",
+    "pinia": "^3.0.2",
+    "qrcode": "^1.5.4",
+    "uuid": "^11.1.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vuetify": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.11.19",
+    "@types/qrcode": "^1.5.6",
+    "@vitejs/plugin-vue": "^5.2.2",
+    "@vue/tsconfig": "^0.7.0",
+    "msw": "^2.2.1",
+    "typescript": "~5.7.2",
+    "vite": "^6.3.1",
+    "vite-plugin-vuetify": "^2.1.1",
+    "vue-tsc": "^2.2.8"
+  }
+}

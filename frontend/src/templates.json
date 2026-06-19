@@ -1,0 +1,700 @@
+[
+    {
+        "name": "🔄 DAKI Framework",
+        "shortDescription": "Drop, Add, Keep, Improve - A structured way to evolve your process",
+        "description": "DAKI retrospective helps teams systematically evaluate their practices by identifying what to Drop (ineffective practices), Add (new ideas), Keep (successful practices), and Improve (promising practices that need refinement). Perfect for teams looking for a balanced approach to process improvement.",
+        "columns": [
+            {
+                "name": "🗑️ Drop",
+                "color": "#F44336",
+                "description": "What practices should we stop doing?",
+                "is_action_column": false
+            },
+            {
+                "name": "➕ Add",
+                "color": "#4CAF50",
+                "description": "What new practices should we start?",
+                "is_action_column": false
+            },
+            {
+                "name": "👍 Keep",
+                "color": "#2196F3",
+                "description": "What current practices are working well?",
+                "is_action_column": false
+            },
+            {
+                "name": "🛠️ Improve",
+                "color": "#FFC107",
+                "description": "What existing practices could be enhanced?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "⚡ Energy Levels",
+        "shortDescription": "Track team energy and optimize workload distribution",
+        "description": "The Energy Levels retrospective helps teams identify what energizes and drains them, leading to better task distribution and improved team morale. Perfect for preventing burnout and maintaining sustainable pace.",
+        "columns": [
+            {
+                "name": "🔋 Fully Charged",
+                "color": "#4CAF50",
+                "description": "What tasks energize you?",
+                "is_action_column": false
+            },
+            {
+                "name": "🪫 Low Energy",
+                "color": "#F44336",
+                "description": "What tasks drain you?",
+                "is_action_column": false
+            },
+            {
+                "name": "📊 Sprint Energy",
+                "color": "#FFC107",
+                "description": "How do you feel about our current work?",
+                "is_action_column": false
+            },
+            {
+                "name": "⚡ Energy Boost",
+                "color": "#2196F3",
+                "description": "How can we optimize energy distribution?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "⛰️ Mountain Climber",
+        "shortDescription": "Map your sprint journey from base camp to peak",
+        "description": "Visualize your sprint as a mountain climbing expedition. Identify the tools that helped you climb, obstacles you faced, and plan your next ascent. Perfect for teams who've completed challenging sprints.",
+        "columns": [
+            {
+                "name": "⛺ Base Camp",
+                "color": "#795548",
+                "description": "Where did we start?",
+                "is_action_column": false
+            },
+            {
+                "name": "🧗 Climbing Gear",
+                "color": "#3F51B5",
+                "description": "What helped us climb?",
+                "is_action_column": false
+            },
+            {
+                "name": "🪨 Rocky Patches",
+                "color": "#F44336",
+                "description": "What obstacles did we face?",
+                "is_action_column": false
+            },
+            {
+                "name": "🏔️ Summit View",
+                "color": "#4CAF50",
+                "description": "What did we achieve?",
+                "is_action_column": false
+            },
+            {
+                "name": "🧭 Next Ascent",
+                "color": "#FFC107",
+                "description": "How can we prepare for the next climb?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "😊 Glad Sad Mad",
+        "shortDescription": "Express emotions and address team concerns",
+        "description": "A simple yet effective way to gauge team emotions and address concerns. This format helps identify what makes the team happy, what disappoints them, and what frustrates them, leading to actionable improvements.",
+        "columns": [
+            {
+                "name": "😊 Glad",
+                "color": "#4CAF50",
+                "description": "What made you happy?",
+                "is_action_column": false
+            },
+            {
+                "name": "😞 Sad",
+                "color": "#FFC107",
+                "description": "What disappointed you?",
+                "is_action_column": false
+            },
+            {
+                "name": "😠 Mad",
+                "color": "#F44336",
+                "description": "What frustrated you?",
+                "is_action_column": false
+            },
+            {
+                "name": "📝 Action Plan",
+                "color": "#2196F3",
+                "description": "How can we address concerns?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🔄 Start Stop Continue",
+        "shortDescription": "Simple and effective process improvement",
+        "description": "The classic retrospective format that helps teams identify what new practices to start, what to stop doing, and what's working well enough to continue. Perfect for teams new to retrospectives or looking for a straightforward approach.",
+        "columns": [
+            {
+                "name": "🚀 Start",
+                "color": "#4CAF50",
+                "description": "What should we start doing?",
+                "is_action_column": false
+            },
+            {
+                "name": "🛑 Stop",
+                "color": "#F44336",
+                "description": "What should we stop doing?",
+                "is_action_column": false
+            },
+            {
+                "name": "✅ Continue",
+                "color": "#2196F3",
+                "description": "What should we keep doing?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🎯 4Ls Framework",
+        "shortDescription": "Liked, Learned, Lacked, Longed For - Comprehensive reflection",
+        "description": "The 4Ls framework provides a balanced view of your sprint through four distinct lenses: what people liked, what they learned, what they felt was lacking, and what they longed for. Perfect for teams seeking deep insights.",
+        "columns": [
+            {
+                "name": "❤️ Liked",
+                "color": "#4CAF50",
+                "description": "What did you enjoy?",
+                "is_action_column": false
+            },
+            {
+                "name": "📚 Learned",
+                "color": "#2196F3",
+                "description": "What did you discover?",
+                "is_action_column": false
+            },
+            {
+                "name": "📉 Lacked",
+                "color": "#FFC107",
+                "description": "What was missing?",
+                "is_action_column": false
+            },
+            {
+                "name": "💫 Longed For",
+                "color": "#9C27B0",
+                "description": "What did you wish for?",
+                "is_action_column": false
+            },
+            {
+                "name": "📋 Action Plan",
+                "color": "#FF5722",
+                "description": "How can we improve?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🎈 Hot Air Balloon",
+        "shortDescription": "Analyze factors affecting your team's altitude",
+        "description": "Take your team on a hot air balloon journey! Examine what gives your team lift, what weighs you down, and how external factors affect your flight. Perfect for teams wanting to optimize their performance through creative metaphors.",
+        "columns": [
+            {
+                "name": "🔥 Hot Air",
+                "color": "#FF5722",
+                "description": "What provided lift and motivation?",
+                "is_action_column": false
+            },
+            {
+                "name": "⚓ Sandbags",
+                "color": "#795548",
+                "description": "What's weighing us down?",
+                "is_action_column": false
+            },
+            {
+                "name": "🌪️ Weather",
+                "color": "#9E9E9E",
+                "description": "What external factors affected us?",
+                "is_action_column": false
+            },
+            {
+                "name": "🧭 Navigation",
+                "color": "#3F51B5",
+                "description": "How clear were our goals?",
+                "is_action_column": false
+            },
+            {
+                "name": "👥 Crew",
+                "color": "#2196F3",
+                "description": "How well did we collaborate?",
+                "is_action_column": false
+            },
+            {
+                "name": "🏆 Achievements",
+                "color": "#4CAF50",
+                "description": "What heights did we reach?",
+                "is_action_column": false
+            },
+            {
+                "name": "🔭 Horizon",
+                "color": "#009688",
+                "description": "What opportunities do we see?",
+                "is_action_column": false
+            },
+            {
+                "name": "📋 Flight Plan",
+                "color": "#9C27B0",
+                "description": "What's our improvement strategy?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "⛵ Sailboat",
+        "shortDescription": "Navigate your team's journey through metaphorical waters",
+        "description": "Set sail with your team! This nautical-themed retrospective helps identify what drives you forward (wind), what holds you back (anchors), what dangers lie ahead (rocks), and where you're heading (island).",
+        "columns": [
+            {
+                "name": "⚓ Anchor",
+                "color": "#795548",
+                "description": "What's holding us back?",
+                "is_action_column": false
+            },
+            {
+                "name": "🪨 Rocks",
+                "color": "#F44336",
+                "description": "What dangers lie ahead?",
+                "is_action_column": false
+            },
+            {
+                "name": "💨 Wind",
+                "color": "#4CAF50",
+                "description": "What's pushing us forward?",
+                "is_action_column": false
+            },
+            {
+                "name": "🏝️ Island",
+                "color": "#FFC107",
+                "description": "What's our destination?",
+                "is_action_column": false
+            },
+            {
+                "name": "🧭 Navigation",
+                "color": "#2196F3",
+                "description": "How do we reach our goal?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🏠 Three Little Pigs",
+        "shortDescription": "Evaluate your project's structural integrity",
+        "description": "Using the classic fairy tale as a metaphor, assess your project's foundations. Identify what's fragile (straw), what needs reinforcement (sticks), and what's solid (bricks). Perfect for architectural and structural reviews.",
+        "columns": [
+            {
+                "name": "🌾 Straw",
+                "color": "#FFC107",
+                "description": "What's fragile and needs attention?",
+                "is_action_column": false
+            },
+            {
+                "name": "🪵 Sticks",
+                "color": "#FF9800",
+                "description": "What needs reinforcement?",
+                "is_action_column": false
+            },
+            {
+                "name": "🧱 Bricks",
+                "color": "#4CAF50",
+                "description": "What's rock solid?",
+                "is_action_column": false
+            },
+            {
+                "name": "🛡️ Protection",
+                "color": "#2196F3",
+                "description": "How can we strengthen everything?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🏎️ Speed Car",
+        "shortDescription": "Analyze your team's velocity and obstacles",
+        "description": "Rev up your retrospective! Examine what powers your team forward, what accelerates progress, and what's applying the brakes. Perfect for teams focused on improving velocity and removing impediments.",
+        "columns": [
+            {
+                "name": "⚙️ Engine",
+                "color": "#FF5722",
+                "description": "What powers us forward?",
+                "is_action_column": false
+            },
+            {
+                "name": "🚀 Accelerator",
+                "color": "#4CAF50",
+                "description": "What helps us go faster?",
+                "is_action_column": false
+            },
+            {
+                "name": "🛑 Brakes",
+                "color": "#F44336",
+                "description": "What's slowing us down?",
+                "is_action_column": false
+            },
+            {
+                "name": "🚧 Roadblocks",
+                "color": "#795548",
+                "description": "What obstacles lie ahead?",
+                "is_action_column": false
+            },
+            {
+                "name": "🔧 Pit Stop",
+                "color": "#2196F3",
+                "description": "What adjustments needed?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🎬 Movie Night",
+        "shortDescription": "Frame your retrospective as a movie review session",
+        "description": "The Movie Night retrospective asks team members to review the last sprint as if it were a movie. This creative approach helps teams reflect on their experience through the lens of storytelling and cinematic tropes.",
+        "columns": [
+            {
+                "name": "🎬 Plot",
+                "color": "#9C27B0",
+                "description": "What was the main story of our sprint?",
+                "is_action_column": false
+            },
+            {
+                "name": "🦸 Heroes",
+                "color": "#3F51B5",
+                "description": "Who were the standout performers?",
+                "is_action_column": false
+            },
+            {
+                "name": "🎭 Plot Twists",
+                "color": "#FF9800",
+                "description": "What unexpected things happened?",
+                "is_action_column": false
+            },
+            {
+                "name": "🤦 Blunders",
+                "color": "#F44336",
+                "description": "What mistakes were made?",
+                "is_action_column": false
+            },
+            {
+                "name": "🎥 Sequel",
+                "color": "#4CAF50",
+                "description": "How can we improve for next sprint?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🌌 Space Mission",
+        "shortDescription": "Reflect on your sprint as an intergalactic journey",
+        "description": "Blast off with this cosmic retrospective! Imagine your team as astronauts on a space mission - what fueled your journey, what black holes did you encounter, and what discoveries did you make in this sprint galaxy?",
+        "columns": [
+            {
+                "name": "🚀 Rocket Fuel",
+                "color": "#FF5722",
+                "description": "What gave us momentum and energy?",
+                "is_action_column": false
+            },
+            {
+                "name": "🪐 Alien Discoveries",
+                "color": "#9C27B0",
+                "description": "What new things did we learn?",
+                "is_action_column": false
+            },
+            {
+                "name": "⚫ Black Holes",
+                "color": "#212121",
+                "description": "What sucked away our time/energy?",
+                "is_action_column": false
+            },
+            {
+                "name": "👽 First Contact",
+                "color": "#4CAF50",
+                "description": "What collaborations worked well?",
+                "is_action_column": false
+            },
+            {
+                "name": "🛸 Mission Control",
+                "color": "#2196F3",
+                "description": "How can we improve our next mission?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🏋️ Gym Session",
+        "shortDescription": "Analyze your team's workout routine (work patterns)",
+        "description": "Spot your team's workout habits! This fitness-themed retro examines what exercises (tasks) built muscle, which caused strain, and how to optimize your team's workout regimen for better performance.",
+        "columns": [
+            {
+                "name": "💪 Gains",
+                "color": "#4CAF50",
+                "description": "What made us stronger?",
+                "is_action_column": false
+            },
+            {
+                "name": "🤕 Injuries",
+                "color": "#F44336",
+                "description": "What caused pain/strain?",
+                "is_action_column": false
+            },
+            {
+                "name": "🥇 Personal Bests",
+                "color": "#FFC107",
+                "description": "What achievements are we proud of?",
+                "is_action_column": false
+            },
+            {
+                "name": "🥤 Recovery",
+                "color": "#2196F3",
+                "description": "What do we need to recharge?",
+                "is_action_column": false
+            },
+            {
+                "name": "📝 Training Plan",
+                "color": "#3F51B5",
+                "description": "How should we adjust our routine?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🎮 Video Game",
+        "shortDescription": "View your sprint as a video game adventure",
+        "description": "Press start on this gaming-inspired retrospective! Analyze your sprint through the lens of game mechanics - what power-ups helped, what enemies appeared, and how can you level up for the next playthrough?",
+        "columns": [
+            {
+                "name": "✨ Power-Ups",
+                "color": "#4CAF50",
+                "description": "What boosted our performance?",
+                "is_action_column": false
+            },
+            {
+                "name": "👾 Boss Fights",
+                "color": "#F44336",
+                "description": "What major challenges did we face?",
+                "is_action_column": false
+            },
+            {
+                "name": "💰 Loot Drops",
+                "color": "#FFC107",
+                "description": "What valuable outcomes did we get?",
+                "is_action_column": false
+            },
+            {
+                "name": "🕹️ Controls",
+                "color": "#9C27B0",
+                "description": "What processes worked/didn't work?",
+                "is_action_column": false
+            },
+            {
+                "name": "🎯 Next Level",
+                "color": "#2196F3",
+                "description": "How can we improve our gameplay?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🍳 Kitchen Nightmares",
+        "shortDescription": "Cook up better results with this culinary-themed retro",
+        "description": "Gordon Ramsay would be proud! This kitchen-themed retrospective helps your team reflect on what ingredients worked, what recipes failed, and how to cook up success in your next sprint service.",
+        "columns": [
+            {
+                "name": "🧂 Secret Ingredients",
+                "color": "#4CAF50",
+                "description": "What made our dish special?",
+                "is_action_column": false
+            },
+            {
+                "name": "🔥 Burnt Dishes",
+                "color": "#F44336",
+                "description": "What didn't turn out well?",
+                "is_action_column": false
+            },
+            {
+                "name": "👨‍🍳 Chef's Specials",
+                "color": "#FFC107",
+                "description": "What individual contributions shined?",
+                "is_action_column": false
+            },
+            {
+                "name": "🧑‍🍳 Kitchen Tools",
+                "color": "#795548",
+                "description": "What resources helped/hindered us?",
+                "is_action_column": false
+            },
+            {
+                "name": "📜 New Recipe",
+                "color": "#2196F3",
+                "description": "How should we cook next sprint?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🦉 Wizard School",
+        "shortDescription": "Magical retrospective for spellbinding improvements",
+        "description": "Accio productivity! This magical retrospective frames your work as wizardry training - what spells worked, what potions exploded, and how to strengthen your team's magic for future challenges.",
+        "columns": [
+            {
+                "name": "✨ Successful Spells",
+                "color": "#4CAF50",
+                "description": "What worked like magic?",
+                "is_action_column": false
+            },
+            {
+                "name": "💥 Potion Explosions",
+                "color": "#F44336",
+                "description": "What backfired spectacularly?",
+                "is_action_column": false
+            },
+            {
+                "name": "📖 Ancient Tomes",
+                "color": "#795548",
+                "description": "What knowledge did we gain?",
+                "is_action_column": false
+            },
+            {
+                "name": "🧙 Professors",
+                "color": "#9C27B0",
+                "description": "Who helped guide our learning?",
+                "is_action_column": false
+            },
+            {
+                "name": "🔮 Divination Class",
+                "color": "#2196F3",
+                "description": "How can we improve our magic?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "👑 Katappa's Blade Retro",
+        "shortDescription": "Why did Kattappa kill Bahubali? ",
+        "description": "Why did Kattappa kill Bahubali? Find your project's hidden betrayals and heroic victories.",
+        "columns": [
+            {
+                "name": "🕌 Mahishmati",
+                "color": "#FFC107",
+                "description": "What's our kingdom's strength?",
+                "is_action_column": false
+            },
+            {
+                "name": "🗡️ Backstabs",
+                "color": "#F44336",
+                "description": "What unexpectedly hurt us?",
+                "is_action_column": false
+            },
+            {
+                "name": "💪 Kalakeya Army",
+                "color": "#795548",
+                "description": "What external forces challenged us?",
+                "is_action_column": false
+            },
+            {
+                "name": "🌊 Waterfall Climb",
+                "color": "#2196F3",
+                "description": "How can we overcome next challenge?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "✈️ Danger Zone Retro",
+        "shortDescription": "Talk to me, Goose!",
+        "description": "Debrief your dogfights with this fighter-pilot themed retro. Identify your need-for-speed moments and turbulence.",
+        "columns": [
+            {
+                "name": "🛫 Afterburners",
+                "color": "#FF5722",
+                "description": "What gave us maximum thrust?",
+                "is_action_column": false
+            },
+            {
+                "name": "☁️ Turbulence",
+                "color": "#9E9E9E",
+                "description": "What shook us up?",
+                "is_action_column": false
+            },
+            {
+                "name": "🎯 Bullseye",
+                "color": "#4CAF50",
+                "description": "What targets did we hit?",
+                "is_action_column": false
+            },
+            {
+                "name": "🛬 Landing Gear",
+                "color": "#3F51B5",
+                "description": "How can we smooth our approach?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "⚡ Marauder's Map Retro",
+        "shortDescription": "Mischief managed!",
+        "description": "Sort your sprint into Hogwarts houses - celebrate Patronus-worthy moments and identify Dementor-like energy drains.",
+        "columns": [
+            {
+                "name": "🦉 Owl Post",
+                "color": "#795548",
+                "description": "What messages need delivering?",
+                "is_action_column": false
+            },
+            {
+                "name": "🧪 Polyjuice Potion",
+                "color": "#9C27B0",
+                "description": "What should we transform?",
+                "is_action_column": false
+            },
+            {
+                "name": "🐍 Chamber of Secrets",
+                "color": "#F44336",
+                "description": "What's lurking in our codebase?",
+                "is_action_column": false
+            },
+            {
+                "name": "🧙 Expecto Patronum!",
+                "color": "#2196F3",
+                "description": "How can we repel blockers?",
+                "is_action_column": true
+            }
+        ]
+    },
+    {
+        "name": "🚢 Titanic Retro",
+        "shortDescription": "Navigate project risks like the unsinkable ship",
+        "description": "Channel your inner Rose and Jack to reflect on what's keeping your project afloat and what icebergs might be lurking ahead. Identify first-class features and third-class bottlenecks.",
+        "columns": [
+            {
+                "name": "💎 Heart of the Ocean",
+                "color": "#2196F3",
+                "description": "What's our most valuable feature?",
+                "is_action_column": false
+            },
+            {
+                "name": "❄️ Icebergs Ahead",
+                "color": "#00BCD4",
+                "description": "What risks are we ignoring?",
+                "is_action_column": false
+            },
+            {
+                "name": "🛳️ First Class",
+                "color": "#4CAF50",
+                "description": "What's working luxuriously well?",
+                "is_action_column": false
+            },
+            {
+                "name": "⚓ Lifeboats",
+                "color": "#FFC107",
+                "description": "What's our backup plan?",
+                "is_action_column": true
+            }
+        ]
+    }
+]

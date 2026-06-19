@@ -1,0 +1,23 @@
+fastapi==0.115.12
+uvicorn==0.34.2
+python-jose[cryptography]==3.4.0
+passlib[bcrypt]==1.7.4
+bcrypt>=4.1.0
+python-multipart==0.0.20
+pydantic[email]==2.11.3
+pydantic-settings==2.9.1
+python-dotenv==1.1.0
+google-genai>=1.0.0
+# Optional AI providers - only used when AI_PROVIDER is set to openai/anthropic
+# (imported lazily). Included so providers are switchable by config alone.
+openai>=1.40.0
+anthropic>=0.39.0
+msal==1.32.0
+google-auth==2.39.0
+websockets==15.0.1
+aiohttp==3.11.18
+email-validator==2.2.0
+google-cloud-firestore==2.14.0
+google-cloud-secret-manager==2.18.1
+motor==3.7.1
+pymongo==4.13.0

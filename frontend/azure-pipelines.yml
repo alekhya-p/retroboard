@@ -1,0 +1,128 @@
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - 'frontend/**'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  - name: workingDirectory
+    value: '$(System.DefaultWorkingDirectory)/frontend'
+  - name: serviceConnection
+    value: 'azure_retroboard'
+  - name: resourceGroup
+    value: 'retroboard'
+  - name: location
+    value: 'francecentral'
+  - name: storageAccountName
+    value: 'retroboardsa'
+  - name: servicePrincipalObjectId
+    value: '0e67f031-c24a-427d-94b5-edc531717025'
+
+steps:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: '$(serviceConnection)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      # Create resource group if it doesn't exist
+      az group create --name $(resourceGroup) --location $(location)
+
+      # Check if storage account exists
+      if ! az storage account show --name $(storageAccountName) --resource-group $(resourceGroup) &> /dev/null; then
+        echo "Creating storage account..."
+        az storage account create \
+          --name $(storageAccountName) \
+          --resource-group $(resourceGroup) \
+          --location $(location) \
+          --sku Standard_LRS \
+          --kind StorageV2 \
+          --enable-hierarchical-namespace false \
+          --allow-blob-public-access true \
+          --min-tls-version TLS1_2
+
+        echo "Creating web container..."
+        az storage container create \
+          --name "\$web" \
+          --account-name $(storageAccountName) \
+          --auth-mode login \
+          --public-access blob
+
+        echo "Enabling static website..."
+        az storage blob service-properties update \
+          --account-name $(storageAccountName) \
+          --auth-mode login \
+          --static-website \
+          --index-document index.html \
+          --404-document index.html
+      else
+        echo "Storage account already exists."
+      fi
+  displayName: 'Ensure Storage Account and Static Website'
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: '$(serviceConnection)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      # Fetch Subscription ID
+      echo "Fetching Subscription ID..."
+      AZURE_SUBSCRIPTION_ID=$(az account show --query id --output tsv)
+      echo "Subscription ID: $AZURE_SUBSCRIPTION_ID"
+
+      # Fetch Service Principal Object ID
+      echo "Fetching Service Principal Object ID..."
+      SERVICE_PRINCIPAL_OBJECT_ID=$(servicePrincipalObjectId)
+      echo "Service Principal Object ID: $SERVICE_PRINCIPAL_OBJECT_ID"
+
+      # Check if role assignment exists
+      echo "Checking if role assignment exists..."
+      ROLE_EXISTS=$(az role assignment list \
+        --assignee $SERVICE_PRINCIPAL_OBJECT_ID \
+        --role "Storage Blob Data Contributor" \
+        --scope "/subscriptions/$AZURE_SUBSCRIPTION_ID/resourceGroups/$(resourceGroup)/providers/Microsoft.Storage/storageAccounts/$(storageAccountName)" \
+        --query "[].id" --output tsv)
+
+      if [ -z "$ROLE_EXISTS" ]; then
+        echo "Role assignment does not exist. Assigning 'Storage Blob Data Contributor' role..."
+        az role assignment create \
+          --assignee $SERVICE_PRINCIPAL_OBJECT_ID \
+          --role "Storage Blob Data Contributor" \
+          --scope "/subscriptions/$AZURE_SUBSCRIPTION_ID/resourceGroups/$(resourceGroup)/providers/Microsoft.Storage/storageAccounts/$(storageAccountName)"
+      else
+        echo "Role assignment already exists. Skipping."
+      fi
+  displayName: 'Ensure Role Assignment for Service Principal'
+
+- task: NodeTool@0
+  inputs:
+    versionSpec: '20.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    cd $(workingDirectory)
+    npm ci
+  displayName: 'Install dependencies'
+
+- script: |
+    cd $(workingDirectory)
+    npm run build:ignore-ts
+  displayName: 'Build frontend'
+
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: '$(serviceConnection)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      echo "Clearing existing files..."
+      az storage blob delete-batch --account-name $(storageAccountName) --source '$web' --auth-mode login
+
+      echo "Uploading new files..."
+      az storage blob upload-batch --account-name $(storageAccountName) --source '$(workingDirectory)/dist' --destination '$web' --auth-mode login --overwrite
+  displayName: 'Deploy to Azure Storage'
