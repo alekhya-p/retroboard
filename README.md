@@ -11,6 +11,12 @@ rooms with built-in team games.
 teammates can join a board as a guest with just a name.
 
 <p align="center">
+  <a href="https://www.producthunt.com/products/reaitro?utm_source=badge-follow&utm_medium=badge&utm_source=badge-reaitro" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1251534&theme=light" alt="reAItro - Remote&#0032;sprint&#0032;retros&#0032;your&#0032;team&#0032;shows&#0032;up&#0032;for | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+  &nbsp;
+  <a href="https://www.producthunt.com/products/reaitro/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-reaitro" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1251534&theme=light" alt="reAItro - Remote&#0032;sprint&#0032;retros&#0032;your&#0032;team&#0032;shows&#0032;up&#0032;for | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+</p>
+
+<p align="center">
   <img src="docs/marketing/product-hunt/demo.gif" alt="reAItro in action - live retro board, team games, and one-click AI summary" width="820">
 </p>
 
